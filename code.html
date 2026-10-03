@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fcf9f3;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary": "#ffffff", "surface-bright": "#fcf9f3", "tertiary-fixed-dim": "#e4c0a0", "tertiary-container": "#7c6046", "outline-variant": "#c5c8bb", "on-primary": "#ffffff", "surface-container": "#f0eee8", "background": "#fcf9f3", "inverse-primary": "#bbcda0", "surface": "#fcf9f3", "on-primary-fixed-variant": "#3c4b29", "surface-container-low": "#f6f3ed", "on-tertiary": "#ffffff", "surface-container-high": "#ebe8e2", "tertiary": "#624830", "error-container": "#ffdad6", "on-primary-fixed": "#121f03", "primary": "#435330", "secondary-container": "#fda95a", "on-secondary-fixed-variant": "#6c3a00", "primary-fixed": "#d7e9bb", "on-background": "#1c1c18", "on-surface-variant": "#45483f", "on-secondary-container": "#723e00", "secondary-fixed": "#ffdcc1", "on-tertiary-container": "#ffdec2", "secondary": "#8e4e00", "on-primary-container": "#d9ebbd", "on-surface": "#1c1c18", "surface-container-lowest": "#ffffff", "surface-dim": "#dcdad4", "tertiary-fixed": "#ffdcbf", "error": "#ba1a1a", "inverse-surface": "#31312d", "primary-container": "#5b6b46", "surface-variant": "#e5e2dc", "on-error": "#ffffff", "surface-container-highest": "#e5e2dc", "on-tertiary-fixed-variant": "#5b422a", "on-error-container": "#93000a", "on-secondary-fixed": "#2e1500", "surface-tint": "#54643f", "inverse-on-surface": "#f3f0ea", "secondary-fixed-dim": "#ffb778", "primary-fixed-dim": "#bbcda0", "outline": "#75786e", "on-tertiary-fixed": "#2a1704" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "space-xxl": "4rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "margin": "2.5rem", "margin-mobile": "1.25rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-xl-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Canis &amp; Co. Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADQO8lPNaxDyr_eXDOGXpJoDhkAWqxyrW3i6SitEWLheCAJARN0MYAwglIA0qnxrWfHkBzaCtempGjuCAbHWn6bYdPI1g-paMpgPqpj65oCtY-2YnZUzFLYZZzTjDWET5PvLm1MjFOvlkV5NNy7c2IddYa-i6T8KCj8QSm_c0IGbFW_dNUaqgyr82R-Eu9lF3LBKP6vI7l7gyH_bDrhk-fSf6xZFW89KxZtX1S99X25Csv8gic24sOmQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">Canis &amp; Co.</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Inicio</span></div></div><div class="flex items-center gap-space-xs"><a aria-label="Ver carrito de compras" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" data-path="carrito" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute top-2 right-2 w-2.5 h-2.5 bg-secondary rounded-full ring-2 ring-surface"></span></a><a aria-label="Perfil del usuario" class="w-11 h-11 flex items-center justify-center rounded-full" data-path="perfil-canino" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtVvVzjJ0CHyjx2UTr6dy2wb_W1U8hSUjDqiWuvjkYybycwA6suH7YkrXPEY4hJYUmxsIH64z9LPjIE4R57p8BmueizQktBb__hGjkgMM8iiWTUsF2ft-RqiOPWQ2Bdz5HfTqSJIsTLNeRx82AQCnPAn9R5YrJrv63fBdj62Rxi7O3OSXJ121gr_9s3SrmouCuPwE9sgRoUS3ab9cfykyRiSQc-pMpLJhDoyLJ6vhtu22AfFbkL0DVLw"/></a></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Search & Friendly Filter Bar -->
+<section class="px-gutter-mobile py-space-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1.5 rounded-full shadow-sm">
+<div class="flex items-center gap-2 pl-3 flex-1 min-w-0">
+<span class="material-symbols-outlined text-outline text-[22px]">search</span>
+<input class="bg-transparent border-0 outline-none w-full font-body-sm text-body-sm text-on-surface placeholder:text-outline-variant" placeholder="Buscar premios, juguetes, camas..." type="text"/>
+</div>
+<button aria-label="Filtros rápidos" class="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-on-primary shadow-sm active:scale-95 transition-transform" id="filterBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</section>
+<!-- Hero Banner: Natural, Warm & Inviting -->
+<section class="px-gutter-mobile pt-space-xs pb-space-md">
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-high shadow-md">
+<!-- Background subtle warm art overlay -->
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-secondary-fixed/50 blur-2xl pointer-events-none"></div>
+<div class="relative p-space-lg flex flex-col gap-space-sm z-10">
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-secondary text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">15% OFF en 1ª compra con CANISLOVE</span>
+</div>
+<div class="max-w-[85%]">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold leading-tight">
+            Todo para consentir a tu mejor amigo
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Nutrición orgánica, accesorios ergonómicos y descanso de ensueño.
+          </p>
+</div>
+<div class="pt-space-xs flex items-center gap-space-sm">
+<button class="px-space-md py-2.5 bg-primary text-on-primary rounded-xl font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform">
+<span>Ver Novedades</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings: 'FILL' 1;">pets</span>
+<span>Envío en 24h</span>
+</div>
+</div>
+</div>
+<!-- Hero Visual Accent Image -->
+<div class="w-full h-36 relative mt-1">
+<img class="w-full h-full object-cover" data-alt="Close-up joyful golden retriever dog wearing a sage green bandana, looking up happily outdoors in a sunny park with soft blurred botanical foliage and warm natural earth tones, high-end editorial pet boutique photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZNkNZvfW65r87Hot5ki0daM2bcibdIEXDozNKNqQ8UHwBJfoHEXdzk8MCt1EU1PDfU8nwKtJYG64lVtqkJLHRw99tuEq5vRO_P5MPM7N21SOVWXUv6_zIBTn4nz_A_91xR0d42xN6bgEbd53guZSUGe4NgTexl6ZUIhRHedRSiXuePT5b5pv8Mf0uth7wJ9XejFos_-_AYg5nFbrAPc4nEM6dF9znZePbDKpd30IfE_kaf1JzSob8kg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high/90 via-transparent to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Categories Horizontal Scroller -->
+<section class="py-space-xs">
+<div class="flex items-center justify-between px-gutter-mobile mb-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Explorar categorías</span>
+<button class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-0.5">
+        Ver todo
+        <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+<div class="flex items-center gap-3 overflow-x-auto px-gutter-mobile pb-2 no-scrollbar">
+<!-- Cat 1 -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-low group-hover:bg-primary-fixed/40 transition-colors flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">nutrition</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center whitespace-nowrap">Alimentación</span>
+</button>
+<!-- Cat 2 -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-low group-hover:bg-primary-fixed/40 transition-colors flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">sports_baseball</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center whitespace-nowrap">Juguetes</span>
+</button>
+<!-- Cat 3 -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-low group-hover:bg-primary-fixed/40 transition-colors flex items-center justify-center text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">bed</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center whitespace-nowrap">Camas</span>
+</button>
+<!-- Cat 4 -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-low group-hover:bg-primary-fixed/40 transition-colors flex items-center justify-center text-tertiary shadow-sm">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">explore</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center whitespace-nowrap">Paseo</span>
+</button>
+<!-- Cat 5 -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-low group-hover:bg-primary-fixed/40 transition-colors flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">soap</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center whitespace-nowrap">Higiene</span>
+</button>
+<!-- Cat 6 -->
+<button class="flex flex-col items-center gap-1.5 flex-shrink-0 group">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-low group-hover:bg-primary-fixed/40 transition-colors flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">bakery_dining</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center whitespace-nowrap">Snacks</span>
+</button>
+</div>
+</section>
+<!-- Best Sellers Product Grid -->
+<section class="px-gutter-mobile py-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Más Vendidos</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Los favoritos indiscutibles de la manada</p>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded-full text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span>Top 10</span>
+</div>
+</div>
+<!-- 2x2 Grid -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Product 1 -->
+<article class="bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm flex flex-col justify-between">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container-low mb-2">
+<img class="w-full h-full object-cover" data-alt="Durable ergonomic olive green dog harness lying on a clean warm wooden table with soft organic morning light, minimal pet accessories product photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-9cXw6t86Tg1rW0sp1neNN017CWEQvbUf6YhbVcS2neZG9cSYjUULhp9ssgSae5wpxcfi5DrkgDmyGSv20Jz-lNb_4TL5_Q3Qz5LKQ-2nJ3WzHlUDawGe1DQZkbIONLddXb-NPCnYEQI933fvZOvEL-AyvXRw2EVoghtj4iCNNgnYLsj7t74Dcd5m7SzJ8ZbMZvNibUf_ycg3ICWYI-8hg4MNdVQxdHx-5nGvylrbkbto7x6Sp4lw1w"/>
+<button aria-label="Añadir a favoritos" class="favorite-toggle absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant active:scale-125 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded-md bg-surface-container-highest/90 text-on-surface font-label-sm text-[10px] flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+            4.9
+          </span>
+</div>
+<div>
+<span class="font-label-sm text-[11px] text-primary uppercase font-bold tracking-wider">Ergonomía</span>
+<h4 class="font-label-md text-label-md text-on-surface line-clamp-2 leading-snug mt-0.5 font-semibold">Arnés Ergonómico Confort Pro</h4>
+</div>
+<div class="flex items-center justify-between mt-3 pt-2">
+<div>
+<span class="font-label-sm text-label-sm text-outline line-through block leading-none">$34.99</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold leading-none">$28.90</span>
+</div>
+<button class="add-to-cart-btn w-9 h-9 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</article>
+<!-- Product 2 -->
+<article class="bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm flex flex-col justify-between">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container-low mb-2">
+<img class="w-full h-full object-cover" data-alt="Artisanal pouch of natural dog treats featuring salmon and blueberry biscuits scattered on a rustic linen backdrop, warm earth tones, premium canine nutrition photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZYrk_huCMkF1o5IJc6BXHN0AiDCxkwMPi-pL357IlF4tLkA1_YwIPBdq88OQmvz2c3OjUJS2oooTzJapjmrG3vuTsOiayNjHYgWexKtjU_hJdA6o1NMIIRX07MLc0uaXBbJ0qgvKaLEV9hHd_cGn209d6DhVbuTq4qeZVOB3DYhq2Xm1MBiverWFgzCXIxahL5QuWyKyYgz8XW40OCszQDw2LeHBA-fPACAHIJMhNRTOkhZs3o2lvyw"/>
+<button aria-label="Añadir a favoritos" class="favorite-toggle absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant active:scale-125 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded-md bg-surface-container-highest/90 text-on-surface font-label-sm text-[10px] flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+            5.0
+          </span>
+</div>
+<div>
+<span class="font-label-sm text-[11px] text-primary uppercase font-bold tracking-wider">Natural</span>
+<h4 class="font-label-md text-label-md text-on-surface line-clamp-2 leading-snug mt-0.5 font-semibold">Snacks de Salmón &amp; Arándanos 200g</h4>
+</div>
+<div class="flex items-center justify-between mt-3 pt-2">
+<div>
+<span class="font-label-sm text-label-sm text-outline line-through block leading-none">$14.50</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold leading-none">$11.20</span>
+</div>
+<button class="add-to-cart-btn w-9 h-9 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</article>
+<!-- Product 3 -->
+<article class="bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm flex flex-col justify-between">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container-low mb-2">
+<img class="w-full h-full object-cover" data-alt="Cozy plush orthopedic memory foam pet bed in warm stone beige fabric with a sleepy french bulldog curled up peacefully, warm lighting, interior design lifestyle shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3hUlA3-QXf0bkpia1srxqKYJ0B8Iv9Um_k5RvcQmnZo2G_mxBvkFHdWf8Xe5ncheOhDC8Tjbx1XW7qw3EhbpxsGCGJGas13gNM4Iu0fUtlnFybe78AE6dLFIwHsqocrtykD4AtYN3x09ohb9ATd6KaeXnKc2RBJNTIlGA5g25y1UXHLEWrs8Jj8IdRSIdG_I485IUZg9laP1yKZYxhAmvfGaTAsyqUWJbeckOzyC9nkiHRf4OFKO73A"/>
+<button aria-label="Añadir a favoritos" class="favorite-toggle absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant active:scale-125 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded-md bg-surface-container-highest/90 text-on-surface font-label-sm text-[10px] flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+            4.8
+          </span>
+</div>
+<div>
+<span class="font-label-sm text-[11px] text-primary uppercase font-bold tracking-wider">Descanso</span>
+<h4 class="font-label-md text-label-md text-on-surface line-clamp-2 leading-snug mt-0.5 font-semibold">Cama Ortopédica Memory Foam</h4>
+</div>
+<div class="flex items-center justify-between mt-3 pt-2">
+<div>
+<span class="font-label-sm text-label-sm text-outline line-through block leading-none">$89.00</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold leading-none">$69.00</span>
+</div>
+<button class="add-to-cart-btn w-9 h-9 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</article>
+<!-- Product 4 -->
+<article class="bg-surface-container-lowest rounded-2xl p-2.5 shadow-sm flex flex-col justify-between">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container-low mb-2">
+<img class="w-full h-full object-cover" data-alt="Eco-friendly rubber interactive treat dispenser ball for dogs in muted terracotta color on a soft green lawn, crisp detail studio product aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3ca9N2MfscbZSU_25V7c6cae2VP7K-9UrKSqBZPwV7p6jkT__Qq_1kckWuq0IAiOa7_shiiRX5IDc_rGUmJ6x_2J4cFg7kPbmAylm7iu9I6LZ2DTlz8onrWyQSZasUz2gyWAJWnPb86T5L_IQLGrPkSepMmnM8-sKyWXI-XMZfRB7n90yivv5NCfRj3xq7j6x8DlefNjQr9K5RrgDPJGRFVF2Fy22ZXH-7V0s3iP10tWn264KU8yIeg"/>
+<button aria-label="Añadir a favoritos" class="favorite-toggle absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant active:scale-125 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded-md bg-surface-container-highest/90 text-on-surface font-label-sm text-[10px] flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+            4.9
+          </span>
+</div>
+<div>
+<span class="font-label-sm text-[11px] text-primary uppercase font-bold tracking-wider">Juegos</span>
+<h4 class="font-label-md text-label-md text-on-surface line-clamp-2 leading-snug mt-0.5 font-semibold">Pelota Interactiva Dispensadora</h4>
+</div>
+<div class="flex items-center justify-between mt-3 pt-2">
+<div>
+<span class="font-label-sm text-label-sm text-outline line-through block leading-none">$18.00</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold leading-none">$13.50</span>
+</div>
+<button class="add-to-cart-btn w-9 h-9 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-sm active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+<!-- Interactive Feature: "Arma la caja mensual de tu perro" -->
+<section class="px-gutter-mobile py-space-sm">
+<div class="bg-primary text-on-primary rounded-3xl p-space-lg relative overflow-hidden shadow-lg">
+<!-- Decorative decorative circles -->
+<div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-primary-container opacity-50 blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[24px]" style="font-variation-settings: 'FILL' 1;">card_giftcard</span>
+<span class="font-label-md text-label-md tracking-wider uppercase text-on-primary-container font-bold">Canis Box Personalizada</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary font-bold leading-tight">
+          Arma la caja mensual de tu perro
+        </h3>
+<p class="font-body-sm text-body-sm text-surface-container-low">
+          Dinos el tamaño, edad y gustos de tu fiel compañero. Nosotros seleccionamos sorpresas nutritivas y juguetes resistentes cada mes.
+        </p>
+<!-- Interactive Step Selector Pills -->
+<div class="grid grid-cols-3 gap-2 pt-1 pb-1">
+<button class="size-pill active flex flex-col items-center py-2 px-1 rounded-xl bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">pets</span>
+<span>Pequeño</span>
+</button>
+<button class="size-pill flex flex-col items-center py-2 px-1 rounded-xl bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold transition-all">
+<span class="material-symbols-outlined text-[18px]">pets</span>
+<span>Mediano</span>
+</button>
+<button class="size-pill flex flex-col items-center py-2 px-1 rounded-xl bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold transition-all">
+<span class="material-symbols-outlined text-[18px]">pets</span>
+<span>Grande</span>
+</button>
+</div>
+<button class="w-full mt-2 py-3 px-space-md bg-secondary-container text-on-secondary-container font-label-lg text-label-lg rounded-xl flex items-center justify-center gap-2 shadow-sm font-bold active:scale-95 transition-transform">
+<span>Comenzar a Personalizar</span>
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Happy Customers Social Proof (Reseñas Destacadas) -->
+<section class="py-space-md">
+<div class="px-gutter-mobile mb-space-sm flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Dueños felices, colas felices</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Historias reales de nuestra comunidad canina</p>
+</div>
+<div class="flex items-center gap-0.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">4.9/5</span>
+</div>
+</div>
+<!-- Review Horizontal Carousel -->
+<div class="flex gap-3 overflow-x-auto px-gutter-mobile pb-2 no-scrollbar">
+<!-- Card Review 1 -->
+<div class="bg-surface-container-low p-space-md rounded-2xl min-w-[260px] max-w-[280px] flex flex-col justify-between flex-shrink-0 shadow-sm">
+<div>
+<div class="flex items-center gap-1 text-secondary mb-2">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-3 italic">
+            "El arnés es una maravilla. Milo solía tirar mucho en el paseo y ahora camina relajado. Además, los premios de salmón le encantan."
+          </p>
+</div>
+<div class="flex items-center gap-2.5 mt-space-sm pt-2">
+<div class="w-9 h-9 rounded-full overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of a smiling young woman holding her cheerful corgi dog close, bright natural outdoor light, wholesome pet owner photo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEhwL4qzpj6h6UGLVDTV0WFbIr6vhkloPxBEI_0Q_wXhV9t3Tz3cgqe24ZIF9Dkdnsliad7uZigQeV56uRZRKwACiIuwpIZIhsPu7yomXyaLrNm5tItamiJwVYevRVBUUZn1I8Qu5bR9YGwwWc97vwo_hzIsm2xEjMv_Z0RVQ_r5dOP5flv9_GGvZZ_afSWRnpJ0BJU6wjOHmkr412e1n6rWfjN2Mb1pkxx8LfCzEfzP6sjOUNDuPFtw"/>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-on-surface font-semibold">Camila R.</h5>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mamá de Milo (Corgi)</span>
+</div>
+</div>
+</div>
+<!-- Card Review 2 -->
+<div class="bg-surface-container-low p-space-md rounded-2xl min-w-[260px] max-w-[280px] flex flex-col justify-between flex-shrink-0 shadow-sm">
+<div>
+<div class="flex items-center gap-1 text-secondary mb-2">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-3 italic">
+            "La cama ortopédica ha mejorado muchísimo las siestas de Bruno, ya es mayor y le costaba levantarse. Calidad inigualable."
+          </p>
+</div>
+<div class="flex items-center gap-2.5 mt-space-sm pt-2">
+<div class="w-9 h-9 rounded-full overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of a friendly man with beard petting an elderly labrador retriever in a warm living room, peaceful and heartwarming aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ8dNNhMEPAft0uvI5ghbTOIDBX8tjIFZ6dD6lOYEASrNQ-jWgFLTGxLg0afMdn7GygUFxCEU_k-LOZyr9q_WFDUq-hloG0q-Y7r7mSOb65Y1_0m-CabwbCGT_KWMEEGsHzZO3rHb7QJvzL5gP7VaZSVT5PU1-AGVepHGRx-nM9jrEycyd-cIfGPVN7yLX3LjSH9qIKXbI8rMfCgk0doi-IwGIKngP99sDuHm7nRArtdxdnzmiXavGZg"/>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-on-surface font-semibold">Mateo V.</h5>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Papá de Bruno (Labrador)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Store Trust Badges & Benefits -->
+<section class="px-gutter-mobile pt-space-xs pb-space-lg">
+<div class="bg-surface-container rounded-2xl p-space-md flex flex-col gap-3">
+<!-- Benefit 1 -->
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+</div>
+<div>
+<h6 class="font-label-md text-label-md text-on-surface font-bold">Envío gratis desde $40</h6>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Recíbelo en 24 a 48 horas en la puerta de tu casa</p>
+</div>
+</div>
+<!-- Benefit 2 -->
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">sentiment_very_satisfied</span>
+</div>
+<div>
+<h6 class="font-label-md text-label-md text-on-surface font-bold">Garantía de colas felices</h6>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Si no le fascina a tu perro, te devolvemos el 100%</p>
+</div>
+</div>
+<!-- Benefit 3 -->
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div>
+<h6 class="font-label-md text-label-md text-on-surface font-bold">Ingredientes 100% naturales</h6>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sin químicos nocivos ni conservantes artificiales</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Micro-Interactions Script -->
+<script>
+    // Favorite toggle interaction
+    document.querySelectorAll('.favorite-toggle').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const icon = btn.querySelector('.material-symbols-outlined');
+        const isFilled = icon.style.fontVariationSettings && icon.style.fontVariationSettings.includes("'FILL' 1");
+        if (isFilled) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          btn.classList.remove('text-secondary');
+          btn.classList.add('text-on-surface-variant');
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          btn.classList.remove('text-on-surface-variant');
+          btn.classList.add('text-secondary');
+        }
+      });
+    });
+
+    // Add to cart interactive feedback
+    document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const icon = btn.querySelector('.material-symbols-outlined');
+        icon.textContent = 'check';
+        btn.classList.replace('bg-primary', 'bg-secondary');
+        setTimeout(() => {
+          icon.textContent = 'add';
+          btn.classList.replace('bg-secondary', 'bg-primary');
+        }, 1200);
+      });
+    });
+
+    // Box size pills selector
+    const pills = document.querySelectorAll('.size-pill');
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        pills.forEach(p => {
+          p.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+          p.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+        });
+        pill.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+        pill.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+      });
+    });
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(60,50,35,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 transition-colors duration-150 text-primary font-bold" data-path="inicio" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Inicio</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant transition-colors duration-150" data-path="tienda" href="#"><span class="material-symbols-outlined text-[24px]">storefront</span><span class="font-label-sm text-label-sm">Tienda</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant transition-colors duration-150" data-path="favoritos" href="#"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="font-label-sm text-label-sm">Favoritos</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant transition-colors duration-150" data-path="pedidos" href="#"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="font-label-sm text-label-sm">Pedidos</span></a></div></nav></body></html>
